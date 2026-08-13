@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://train_scene"]
+
+[node name="Train" type="Node3D"]
