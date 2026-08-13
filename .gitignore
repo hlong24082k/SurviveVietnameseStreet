@@ -1,0 +1,43 @@
+# ==========================================
+# Godot-specific ignores
+# ==========================================
+
+# Godot 4+ cache, data, and imported binary assets
+.godot/
+
+# Godot 3.x cache and imported binary assets 
+.import/
+
+# Don't commit translation strings automatically compiled from source
+*.translation
+
+# ==========================================
+# Export & Build ignores
+# ==========================================
+
+# Individual export configurations (can contain pathways specific to your computer)
+export_presets.cfg
+
+# If you prefer to keep export presets tracked but want to hide credentials:
+# export_credentials.cfg
+
+# Prevent committing large compiled binaries by putting them in an 'exports' or 'builds' folder
+# (Uncomment the folder name you use below)
+# build/
+# exports/
+
+# ==========================================
+# Mono / C# specific ignores (If using Mono)
+# ==========================================
+.mono/
+data_**/
+mono_crash.*.json
+
+# ==========================================
+# OS & Tooling vulnerabilities
+# ==========================================
+.DS_Store
+Thumbs.db
+*.tmp
+
+*.uid

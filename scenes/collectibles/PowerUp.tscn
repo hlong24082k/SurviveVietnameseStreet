@@ -1,3 +1,0 @@
-[gd_scene format=3 uid="uid://powerup_scene"]
-
-[node name="PowerUp" type="Area3D"]
