@@ -1,5 +1,6 @@
 extends CharacterBody3D
-class_name Player
+class_name Player 
 
 func _ready() -> void:
+	pass
 	pass
