@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://csbgdlo8fwgcy"]
+
+[ext_resource type="Material" uid="uid://bbi101762vk45" path="res://art/materials/red.tres" id="1_20bfd"]
+[ext_resource type="Script" uid="uid://djb7o7l83g5o4" path="res://scenes/racing_boy.gd" id="1_equgg"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_aabau"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_hxsp4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fc2mn"]
+
+[node name="Racing Boy" type="Area3D" unique_id=624563570]
+script = ExtResource("1_equgg")
+
+[node name="BodyMesh" type="MeshInstance3D" parent="." unique_id=24874641]
+transform = Transform3D(1.5, 0, 0, 0, 1, 0, 0, 0, 0.8, 0.0003246665, 0, 0)
+mesh = SubResource("BoxMesh_aabau")
+surface_material_override/0 = ExtResource("1_20bfd")
+
+[node name="WarningLine" type="MeshInstance3D" parent="." unique_id=1983700015]
+transform = Transform3D(40, 0, 0, 0, 0.02, 0, 0, 0, 0.15, 0, 0, 0)
+mesh = SubResource("BoxMesh_hxsp4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=168897852]
+transform = Transform3D(1.5, 0, 0, 0, 1, 0, 0, 0, 0.8, 0, 0, 0)
+shape = SubResource("BoxShape3D_fc2mn")
