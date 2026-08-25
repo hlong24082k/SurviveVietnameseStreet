@@ -1,11 +1,7 @@
 [gd_scene format=3 uid="uid://cgd0qkgnstuy0"]
 
 [ext_resource type="Script" uid="uid://mfs7p3b13d5g" path="res://scenes/Level.gd" id="1_7eprk"]
-[ext_resource type="PackedScene" uid="uid://p71xwawyruxj" path="res://modules/module1.tscn" id="2_foovf"]
-[ext_resource type="PackedScene" uid="uid://3sve2nrss2io" path="res://modules/module2.tscn" id="3_54n4n"]
-[ext_resource type="PackedScene" uid="uid://d2q8y0rtu2njt" path="res://modules/module3.tscn" id="4_ii3k0"]
-[ext_resource type="PackedScene" uid="uid://c78ayj4g08730" path="res://modules/module4.tscn" id="5_6qkjt"]
-[ext_resource type="PackedScene" uid="uid://urka8ho68bnr" path="res://modules/module5.tscn" id="6_d4cja"]
+[ext_resource type="PackedScene" uid="uid://c4jvi1igptb7j" path="res://modules/Test2.gltf" id="2_tbgi4"]
 [ext_resource type="Script" uid="uid://dl8npl72v4q1d" path="res://scenes/player.gd" id="7_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://csbgdlo8fwgcy" path="res://scenes/racing_boy.tscn" id="8_tipki"]
 [ext_resource type="Script" uid="uid://c76mha213t20v" path="res://scenes/spawner.gd" id="9_85g3d"]
@@ -28,8 +24,9 @@ volumetric_fog_density = 0.03
 [node name="main" type="Node3D" unique_id=851767329]
 
 [node name="Level" type="Node3D" parent="." unique_id=2107737034]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
 script = ExtResource("1_7eprk")
-modules = Array[PackedScene]([ExtResource("6_d4cja"), ExtResource("2_foovf"), ExtResource("3_54n4n"), ExtResource("4_ii3k0"), ExtResource("5_6qkjt")])
+modules = Array[PackedScene]([ExtResource("2_tbgi4")])
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=944242796]
 environment = SubResource("Environment_jgbfd")
