@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 # --- TUNING SETTINGS ---
 @export var steer_speed: float = 12.0        # How fast you steer left / right
-@export var road_width: float = 3.2          # Limits how close you can get to the side walls
+@export var road_width: float = 8          # Limits how close you can get to the side walls
 @export var tilt_angle: float = 20.0         # How much the bike leans when turning (degrees)
 @export var tilt_speed: float = 12.0         # How fast the lean responds
 
