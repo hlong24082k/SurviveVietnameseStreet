@@ -1,15 +1,17 @@
 [gd_scene format=3 uid="uid://cgd0qkgnstuy0"]
 
-[ext_resource type="Script" uid="uid://mfs7p3b13d5g" path="res://scenes/Level.gd" id="1_7eprk"]
-[ext_resource type="PackedScene" uid="uid://bgfu707eiwuon" path="res://modules/Module 1.gltf" id="2_85g3d"]
-[ext_resource type="PackedScene" uid="uid://wmofxnylvgj0" path="res://modules/Module 2.gltf" id="3_choun"]
-[ext_resource type="PackedScene" uid="uid://cjyq26c6portf" path="res://modules/Module 3.gltf" id="4_ya4ey"]
-[ext_resource type="PackedScene" uid="uid://dhn17f8ceemnb" path="res://modules/Module 4.gltf" id="5_eb6dy"]
-[ext_resource type="PackedScene" uid="uid://ckenvoecv2kr8" path="res://modules/Module 5.gltf" id="6_trceg"]
-[ext_resource type="Script" uid="uid://dl8npl72v4q1d" path="res://scenes/player.gd" id="7_o6xl0"]
-[ext_resource type="PackedScene" uid="uid://ddca4vsg3nr6m" path="res://modules/Module 6.gltf" id="8_jbj1t"]
-[ext_resource type="PackedScene" uid="uid://csbgdlo8fwgcy" path="res://scenes/racing_boy.tscn" id="8_tipki"]
-[ext_resource type="Script" uid="uid://c76mha213t20v" path="res://scenes/spawner.gd" id="9_85g3d"]
+[ext_resource type="Script" path="res://scenes/main/main.gd" id="1_main_script"]
+[ext_resource type="Script" path="res://scenes/level/level.gd" id="1_7eprk"]
+[ext_resource type="PackedScene" uid="uid://bgfu707eiwuon" path="res://scenes/level/modules/Module 1.gltf" id="2_85g3d"]
+[ext_resource type="PackedScene" uid="uid://wmofxnylvgj0" path="res://scenes/level/modules/Module 2.gltf" id="3_choun"]
+[ext_resource type="PackedScene" uid="uid://cjyq26c6portf" path="res://scenes/level/modules/Module 3.gltf" id="4_ya4ey"]
+[ext_resource type="PackedScene" uid="uid://dhn17f8ceemnb" path="res://scenes/level/modules/Module 4.gltf" id="5_eb6dy"]
+[ext_resource type="PackedScene" uid="uid://ckenvoecv2kr8" path="res://scenes/level/modules/Module 5.gltf" id="6_trceg"]
+[ext_resource type="Script" path="res://scenes/player/player.gd" id="7_o6xl0"]
+[ext_resource type="PackedScene" uid="uid://ddca4vsg3nr6m" path="res://scenes/level/modules/Module 6.gltf" id="8_jbj1t"]
+[ext_resource type="PackedScene" uid="uid://csbgdlo8fwgcy" path="res://scenes/racing_boy/racing_boy.tscn" id="8_tipki"]
+[ext_resource type="Script" path="res://scenes/racing_boy/spawner.gd" id="9_85g3d"]
+[ext_resource type="PackedScene" path="res://scenes/ui/ui.tscn" id="10_uiscene"]
 
 [sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_pl37p"]
 
@@ -27,6 +29,7 @@ volumetric_fog_density = 0.03
 [sub_resource type="BoxShape3D" id="BoxShape3D_aabau"]
 
 [node name="main" type="Node3D" unique_id=851767329]
+script = ExtResource("1_main_script")
 
 [node name="Level" type="Node3D" parent="." unique_id=2107737034]
 transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
@@ -61,3 +64,5 @@ shape = SubResource("BoxShape3D_aabau")
 
 [node name="Spawner" type="Node3D" parent="." unique_id=899092999]
 script = ExtResource("9_85g3d")
+
+[node name="UI" parent="." instance=ExtResource("10_uiscene")]

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://wmofxnylvgj0"
-path="res://.godot/imported/Module 2.gltf-e9b949ebf0ac3265bf8106e517dfe0ca.scn"
+uid="uid://cjyq26c6portf"
+path="res://.godot/imported/Module 3.gltf-c7ccec324823e01a7f64f2332728c86c.scn"
 
 [deps]
 
-source_file="res://modules/Module 2.gltf"
-dest_files=["res://.godot/imported/Module 2.gltf-e9b949ebf0ac3265bf8106e517dfe0ca.scn"]
+source_file="res://scenes/level/modules/Module 3.gltf"
+dest_files=["res://.godot/imported/Module 3.gltf-c7ccec324823e01a7f64f2332728c86c.scn"]
 
 [params]
 
@@ -57,9 +57,6 @@ _subresources={
 "generate/physics": true
 },
 "PATH:mesh6": {
-"generate/physics": true
-},
-"PATH:mesh7": {
 "generate/physics": true
 }
 }

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://urka8ho68bnr"]
 
-[ext_resource type="Script" path="res://modules/module.gd" id="1_5avdq"]
+[ext_resource type="Script" path="res://scenes/level/modules/module.gd" id="1_5avdq"]
 [ext_resource type="ArrayMesh" uid="uid://cu34sjirpgpco" path="res://art/models/module5.obj" id="2_clp3o"]
 [ext_resource type="Material" uid="uid://b84cwv5kxjjqs" path="res://art/materials/grey.tres" id="3_3j162"]
 

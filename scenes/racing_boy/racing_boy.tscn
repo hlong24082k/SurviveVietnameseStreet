@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://csbgdlo8fwgcy"]
 
 [ext_resource type="Material" uid="uid://bbi101762vk45" path="res://art/materials/red.tres" id="1_20bfd"]
-[ext_resource type="Script" uid="uid://djb7o7l83g5o4" path="res://scenes/racing_boy.gd" id="1_equgg"]
+[ext_resource type="Script" path="res://scenes/racing_boy/racing_boy.gd" id="1_equgg"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_aabau"]
 

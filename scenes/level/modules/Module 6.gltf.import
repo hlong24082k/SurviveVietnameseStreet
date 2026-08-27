@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ddca4vsg3nr6m"
-path="res://.godot/imported/Module 6.gltf-77c8c9c27bad1ae809b75793f57976a7.scn"
+path="res://.godot/imported/Module 6.gltf-2e49d887441246a91348cdd22c8f555f.scn"
 
 [deps]
 
-source_file="res://modules/Module 6.gltf"
-dest_files=["res://.godot/imported/Module 6.gltf-77c8c9c27bad1ae809b75793f57976a7.scn"]
+source_file="res://scenes/level/modules/Module 6.gltf"
+dest_files=["res://.godot/imported/Module 6.gltf-2e49d887441246a91348cdd22c8f555f.scn"]
 
 [params]
 

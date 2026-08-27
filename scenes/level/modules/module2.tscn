@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://3sve2nrss2io"]
 
 [ext_resource type="ArrayMesh" uid="uid://f5d5qjnyqap3" path="res://art/models/module2.obj" id="1_0g4n0"]
-[ext_resource type="Script" path="res://modules/module.gd" id="1_jgqrn"]
+[ext_resource type="Script" path="res://scenes/level/modules/module.gd" id="1_jgqrn"]
 [ext_resource type="Material" uid="uid://b84cwv5kxjjqs" path="res://art/materials/grey.tres" id="2_ts8b0"]
 [ext_resource type="Material" uid="uid://bbi101762vk45" path="res://art/materials/red.tres" id="3_vviiq"]
 

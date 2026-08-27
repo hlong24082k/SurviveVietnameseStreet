@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b5jm3woxkupms"
-path="res://.godot/imported/Module 0.gltf-3e938042beb99bb48265b4f5d59af66e.scn"
+uid="uid://bgfu707eiwuon"
+path="res://.godot/imported/Module 1.gltf-9da871a63bc269368c447f7a3c1619d8.scn"
 
 [deps]
 
-source_file="res://modules/Module 0.gltf"
-dest_files=["res://.godot/imported/Module 0.gltf-3e938042beb99bb48265b4f5d59af66e.scn"]
+source_file="res://scenes/level/modules/Module 1.gltf"
+dest_files=["res://.godot/imported/Module 1.gltf-9da871a63bc269368c447f7a3c1619d8.scn"]
 
 [params]
 
@@ -39,7 +39,30 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={}
+_subresources={
+"nodes": {
+"PATH:mesh": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:mesh2": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:mesh3": {
+"generate/physics": true
+},
+"PATH:mesh4": {
+"generate/physics": true
+},
+"PATH:mesh5": {
+"generate/physics": true
+},
+"PATH:mesh6": {
+"generate/physics": true
+}
+}
+}
 gltf/naming_version=2
 gltf/embedded_image_handling=1
 gltf/texture_map_mode=1
