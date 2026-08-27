@@ -1,8 +1,10 @@
 extends CharacterBody3D
 
+signal player_died
+
 # --- TUNING SETTINGS ---
 @export var steer_speed: float = 12.0        # How fast you steer left / right
-@export var road_width: float = 8          # Limits how close you can get to the side walls
+@export var road_width: float = 8.0         # Limits how close you can get to the side walls
 @export var tilt_angle: float = 20.0         # How much the bike leans when turning (degrees)
 @export var tilt_speed: float = 12.0         # How fast the lean responds
 
@@ -59,6 +61,4 @@ func trigger_crash() -> void:
 		return
 	is_dead = true
 	print("CRASHED!")
-	
-	# Instantly reload and restart the game
-	get_tree().reload_current_scene()
+	player_died.emit()

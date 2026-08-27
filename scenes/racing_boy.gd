@@ -80,7 +80,8 @@ func _physics_process(delta: float) -> void:
 			# 1. Hit the Player -> Game Over
 			if "Player" in body.name or body.is_in_group("player"):
 				print("HIT PLAYER! 💥")
-				get_tree().reload_current_scene()
+				if body.has_method("trigger_crash"):
+					body.trigger_crash()
 				return
 
 			# 2. Hit an obstacle / red block -> Wipeout & Delete!
